@@ -20,11 +20,11 @@ export default function IndexPage() {
             Xをフォローする
           </Link>
           <h1 className="text-4xl font-extrabold text-3xl sm:text-5xl md:text6xl lg:text-7xl">
-            Post Writer
+            My Blog
           </h1>
           <p className="text-muted-foreground sm:text-x1 leading-normal max-w-[42rem]">
             このアプリケーションはNext.js
-            AppRouterで作られたもの。ユーザーはフォローしているユーザーの投稿を表示する
+            個人の学習ログやポートフォリオを表示する。
           </p>
           <div className="space-x-4">
             <Link href={'/login'} className={cn(buttonVariants({ size: 'lg' }))}>
