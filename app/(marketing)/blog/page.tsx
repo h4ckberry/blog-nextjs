@@ -9,13 +9,13 @@ export default function BlogPage() {
   return (
     <div className="container max-w-4xl py-6 lg:py-10">
       <div>
-        <div className="space-y-4">
+        <div className="space-y-4 ml-4">
           <h1 className="font-extrabold text-4xl lg:text-5xl tracking-tighter">Blog</h1>
           <p className="text-muted-foreground text-x1">ContantLayerとMDXで書く</p>
         </div>
       </div>
       <hr className="my-8" />
-      <div className="grid sm:grid-cols-2 gap-10">
+      <div className="grid sm:grid-cols-2 gap-10 mr-4 ml-4">
         {posts.map((post) => (
           <article key={post._id} className="relative flex flex-col">
             {post.image && (
@@ -33,7 +33,6 @@ export default function BlogPage() {
               <p className="text-muted-foreground">{format(post.date, 'yyyy/MM/dd')}</p>
             )}
             <Link href={post.slug} className="absolute inset-0">
-              記事を見る
             </Link>
           </article>
         ))}
