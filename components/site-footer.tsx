@@ -8,7 +8,7 @@ export default function SiteFooter() {
         <p className="text-center text-sm md:text:left">
           Built by {''}
           <Link href={siteConfig.links.x} className="underline underline-offset-4 font-medium">
-            KotaEnokida
+            h4ckberry
           </Link>
           . Hosted on {''}
           <Link href={'https//vercel.com'}>Vercel</Link>
