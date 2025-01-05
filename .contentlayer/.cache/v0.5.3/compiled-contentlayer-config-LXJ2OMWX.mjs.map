@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../contentlayer.config.ts"],
+  "sourcesContent": ["import { defineDocumentType, makeSource } from 'contentlayer2/source-files';\n\nexport const Post = defineDocumentType(() => ({\n  name: 'Post',\n  filePathPattern: `blog/**/*.mdx`,\n  fields: {\n    title: { type: 'string', required: true },\n    description: { type: 'string' },\n    date: { type: 'date', required: true },\n    published: { type: 'boolean', default: true },\n    image: { type: 'string', required: true },\n  },\n  computedFields: {\n    slug: { type: 'string', resolve: (doc) => `/${doc._raw.flattenedPath}` },\n  },\n}));\n\nexport default makeSource({\n  contentDirPath: './content',\n  /*              ^^^^^^^ Directory with the Markdown files. */\n  documentTypes: [Post],\n});\n"],
+  "mappings": ";AAAA,SAAS,oBAAoB,kBAAkB;AAExC,IAAM,OAAO,mBAAmB,OAAO;AAAA,EAC5C,MAAM;AAAA,EACN,iBAAiB;AAAA,EACjB,QAAQ;AAAA,IACN,OAAO,EAAE,MAAM,UAAU,UAAU,KAAK;AAAA,IACxC,aAAa,EAAE,MAAM,SAAS;AAAA,IAC9B,MAAM,EAAE,MAAM,QAAQ,UAAU,KAAK;AAAA,IACrC,WAAW,EAAE,MAAM,WAAW,SAAS,KAAK;AAAA,IAC5C,OAAO,EAAE,MAAM,UAAU,UAAU,KAAK;AAAA,EAC1C;AAAA,EACA,gBAAgB;AAAA,IACd,MAAM,EAAE,MAAM,UAAU,SAAS,CAAC,QAAQ,IAAI,IAAI,KAAK,aAAa,GAAG;AAAA,EACzE;AACF,EAAE;AAEF,IAAO,8BAAQ,WAAW;AAAA,EACxB,gBAAgB;AAAA;AAAA,EAEhB,eAAe,CAAC,IAAI;AACtB,CAAC;",
+  "names": []
+}
