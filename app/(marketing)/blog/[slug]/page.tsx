@@ -58,7 +58,7 @@ export default async function PostPgae({ params }: { params: Promise<{ slug: str
 
   return (
     <div>
-      <article className="container max-w-3xl py-6 lg:py-10">
+      <article className="container p-4 max-w-3xl py-6 lg:py-10">
         <div>
           {post.date && <time>Pubished on {format(post.date, 'yyyy/MM/dd')}</time>}
           <h1 className="mt-2 font-extrabold text-4xl lg:text-5xl leading-tight">{post.title}</h1>

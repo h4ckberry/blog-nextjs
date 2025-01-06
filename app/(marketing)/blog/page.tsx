@@ -10,8 +10,8 @@ export default function BlogPage() {
     <div className="container max-w-4xl py-6 lg:py-10">
       <div>
         <div className="space-y-4 ml-4">
-          <h1 className="font-extrabold text-4xl lg:text-5xl tracking-tighter">Blog</h1>
-          <p className="text-muted-foreground text-x1">ContantLayerとMDXで書く</p>
+          <h1 className="font-extrabold text-4xl lg:text-5xl tracking-tighter">Notion Blog</h1>
+          <p className="text-muted-foreground text-x1">Notionに書いた記事を表示します</p>
         </div>
       </div>
       <hr className="my-8" />
@@ -24,7 +24,7 @@ export default function BlogPage() {
                 alt={post.title}
                 width={804}
                 height={452}
-                className="rounded-md border bg-muted"
+                className="rounded-lg border bg-muted"
               />
             )}
             <h2 className="text-2xl font-extrabold">{post.title}</h2>
